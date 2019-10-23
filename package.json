@@ -1,0 +1,22 @@
+{
+  "name": "tplink_exporter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FrankZZ",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.1",
+    "bunyan": "^1.8.12",
+    "convict": "^5.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
+}
