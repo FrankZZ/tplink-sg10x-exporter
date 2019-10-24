@@ -6,11 +6,13 @@ const configSchema = convict({
     port: {
         description: 'The port of the API to listen on',
         default: 8080,
+        type: 'int',
         env: 'PORT'
     },
     name: {
         description: 'The name of this service',
         default: 'tplink_exporter',
+        type: String,
         env: 'NAME'
     },
     switch: {
@@ -28,6 +30,27 @@ const configSchema = convict({
             description: 'The host of the TP-Link switch',
             default: '192.168.0.1',
             env: 'SWITCH_HOST'
+        },
+        name: {
+            description: 'A name to reference this switch',
+            default: null,
+            type: String,
+            env: 'SWITCH_NAME'
+        }
+    },
+    reporter: {
+        reporter: {
+            description: 'The reporter to use',
+            default: null,
+            type: String
+        },
+        influxdb: {
+            host: {
+                description: 'The host of the InfluxDB Server',
+                default: '127.0.0.1',
+                type: String,
+                env: 'INFLUXDB_HOST'
+            }
         }
     }
 });
