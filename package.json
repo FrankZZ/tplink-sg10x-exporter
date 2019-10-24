@@ -1,5 +1,5 @@
 {
-  "name": "tplink_exporter",
+  "name": "tplink-sg10x-exporter",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
