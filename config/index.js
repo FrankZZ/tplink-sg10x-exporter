@@ -12,7 +12,7 @@ const configSchema = convict({
     name: {
         description: 'The name of this service',
         default: 'tplink_exporter',
-        type: String,
+        type: 'string',
         env: 'NAME'
     },
     switch: {
@@ -34,21 +34,22 @@ const configSchema = convict({
         name: {
             description: 'A name to reference this switch',
             default: null,
-            type: String,
+            type: 'string',
             env: 'SWITCH_NAME'
         }
     },
     reporter: {
         reporter: {
             description: 'The reporter to use',
-            default: null,
-            type: String
+            type: String,
+            default: 'influxdb',
+            env: 'REPORTER'
         },
         influxdb: {
             host: {
                 description: 'The host of the InfluxDB Server',
                 default: '127.0.0.1',
-                type: String,
+                type: 'string',
                 env: 'INFLUXDB_HOST'
             }
         }

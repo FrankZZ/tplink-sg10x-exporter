@@ -14,6 +14,7 @@
     "bunyan": "^1.8.12",
     "convict": "^5.2.0",
     "metrics-influxdb": "^1.0.1",
+    "node-cron": "^2.0.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
