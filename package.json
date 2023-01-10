@@ -12,7 +12,7 @@
   "dependencies": {
     "bluebird": "^3.7.1",
     "bunyan": "^1.8.12",
-    "convict": "^6.2.3",
+    "convict": "^6.2.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
